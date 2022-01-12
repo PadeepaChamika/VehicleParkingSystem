@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parkingDetailsAnchorPaneContext" prefHeight="616.0" prefWidth="1250.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingSystemDetailsFormController">
+   <children>
+      <AnchorPane prefHeight="635.0" prefWidth="275.0" style="-fx-background-color: #bdc3c7;">
+         <children>
+            <ImageView fitHeight="167.0" fitWidth="285.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Parking-car-park-UK-cheapest-most-expensive-830524.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="564.0" onAction="#onLogout" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #7f8c8d;" text="Log out">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ComboBox fx:id="cmbSelectOption" layoutX="17.0" layoutY="206.0" onAction="#selectOption" prefHeight="32.0" prefWidth="205.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="302.0" onAction="#onAddVehicle" prefHeight="53.0" prefWidth="159.0" style="-fx-background-color: #7f8c8d;" text="Add Vehicle">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="408.0" onAction="#onAddDriver" prefHeight="53.0" prefWidth="159.0" style="-fx-background-color: #7f8c8d;" text="Add Driver">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="tableAnchorPaneContext" layoutX="275.0" prefHeight="634.0" prefWidth="999.0" />
+   </children>
+</AnchorPane>

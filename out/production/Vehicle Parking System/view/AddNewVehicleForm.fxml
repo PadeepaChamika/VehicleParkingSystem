@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewVehicleAnchorPaneContext" prefHeight="310.0" prefWidth="557.0" style="-fx-background-color: #c7ecee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewVehicleFormController">
+   <children>
+      <Label layoutX="22.0" layoutY="67.0" text="Vehicle Number">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="123.0" text="Maximum Weight">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="183.0" text="No of passengers">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="67.0" text="Vehicle Type">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" layoutX="136.0" layoutY="63.0" onAction="#moveToVehicleType" />
+      <TextField fx:id="txtMaxWeight" layoutX="136.0" layoutY="119.0" onAction="#moveToPassenger" />
+      <TextField fx:id="txtPassenger" layoutX="136.0" layoutY="179.0" />
+      <ComboBox fx:id="cmbVehicleType" layoutX="386.0" layoutY="63.0" onAction="#moveToMaxWeight" prefWidth="150.0" />
+      <JFXButton buttonType="RAISED" layoutX="423.0" layoutY="248.0" onAction="#onAddVehicle" style="-fx-background-color: #7f8c8d;" text="Add Vehicle">
+         <font>
+            <Font name="Bodoni MT Black" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

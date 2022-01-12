@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="onDeliveryFormAnchorPaneContext" prefHeight="619.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryFormController">
+   <children>
+      <TableView fx:id="tblOnDelivery" layoutY="110.0" prefHeight="587.0" prefWidth="1007.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="161.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="260.0" text="Vehicle Type" />
+            <TableColumn fx:id="colDriverName" prefWidth="290.0" text="Driver Name" />
+            <TableColumn fx:id="colLeftDate" prefWidth="295.0" text="Left Date and Time" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="408.0" layoutY="30.0" text="On Delivery">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="20.0" layoutY="48.0" prefHeight="3.0" prefWidth="375.0" style="-fx-background-color: blue;" />
+      <Separator layoutX="638.0" layoutY="49.0" prefHeight="3.0" prefWidth="336.0" style="-fx-background-color: blue;" />
+   </children>
+</AnchorPane>

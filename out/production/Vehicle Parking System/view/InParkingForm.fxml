@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="inParkingFormAnchorPaneContext" prefHeight="619.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
+   <children>
+      <TableView fx:id="tblInParking" layoutY="82.0" prefHeight="615.0" prefWidth="1007.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="213.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="296.00001525878906" text="Vehicle Type" />
+            <TableColumn fx:id="colParkingSlot" prefWidth="192.0" text="Parking Slot" />
+            <TableColumn fx:id="colParkedDate" prefWidth="305.0" text="Parked Date and Time" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="403.0" layoutY="23.0" text="In Parking">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="42.0" prefHeight="2.0" prefWidth="374.0" style="-fx-background-color: blue;" />
+      <Separator layoutX="600.0" layoutY="42.0" prefHeight="3.0" prefWidth="380.0" style="-fx-background-color: blue;" />
+   </children>
+</AnchorPane>
